@@ -184,7 +184,7 @@
 
   .search-bar {
     margin-top: 10px;
-      width: 30%;
+     
   }
 
   .banner {
@@ -234,7 +234,7 @@
     }
 
     .search-bar {
-
+    text-align: left;
       width: 30%;
   }
   .banner h1 {
