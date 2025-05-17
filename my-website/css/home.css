@@ -43,6 +43,7 @@
     .list {
       display: flex;
       overflow-x: auto;
+      overflow-y: hidden;
     }
 
 
@@ -76,7 +77,7 @@
       padding: 20px;
       width: 100%;
       max-width: 800px;
-      max-height: 90vh;
+      max-height: 95vh;
       overflow-y: auto;
       position: relative;
       text-align: center;
@@ -158,6 +159,49 @@
       right: 30px;
       font-size: 30px;
     }
+
+    .season-episode-selectors {
+  text-align: left;
+  margin-top: 10px;
+}
+
+.season-episode-selectors label,
+.season-episode-selectors select {
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.genre-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 10px 0 20px 0;
+  font-size: 14px;
+}
+
+.genre-filters label {
+  background-color: #1e1e1e;
+  color: #ddd;
+  padding: 4px 10px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.genre-filters input[type="checkbox"] {
+  accent-color: #ff5555;
+  margin-right: 6px;
+  transform: scale(1.1);
+}
+
+.genre-filters label:hover {
+  background-color: #333;
+  color: #fff;
+}
+
 
 /* MOBILE DISPLAY START */
 @media (max-width: 768px) {
