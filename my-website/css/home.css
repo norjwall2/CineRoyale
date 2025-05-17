@@ -1,5 +1,10 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: Arial, sans-serif; background: #111; color: #fff;}
+    body { font-family: Arial, sans-serif; background: #111; color: #fff;
+        
+        margin-left: 150px;
+        margin-right: 150px
+    
+         }
 
     .navbar {
       display: flex; justify-content: space-between; align-items: center;
@@ -161,6 +166,11 @@
     align-items: flex-start;
   }
 
+    body {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
   .nav-links {
     flex-direction: row;
     width: 100%;
@@ -180,11 +190,11 @@
       height: 30vh;
   }
     
-  .modal-body {
+  .modal- {
     align-items: center;
   }
 
-  .modal-body img {
+  .modal- img {
     width: 40%;
   }
 
@@ -217,6 +227,10 @@
 }
 
 @media (max-width: 480px) {
+    body {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
   .banner h1 {
     font-size: 20px;
     padding: 5px;
@@ -231,7 +245,7 @@
     padding: 15px;
   }
 
-  .modal-body img {
+  .modal- img {
     width: 40%;
   }
 
