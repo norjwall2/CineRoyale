@@ -232,6 +232,11 @@
         margin-left: 0px;
         margin-right: 0px;
     }
+
+    .search-bar {
+
+      width: 30%;
+  }
   .banner h1 {
     font-size: 20px;
     padding: 5px;
