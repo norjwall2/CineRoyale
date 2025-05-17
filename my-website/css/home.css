@@ -234,7 +234,7 @@
     }
 
     .search-bar {
-    text-align: right;
+    margin-left: auto;
       width: 30%;
   }
   .banner h1 {
