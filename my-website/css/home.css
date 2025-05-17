@@ -256,8 +256,8 @@
   }
 
   .search-modal .close {
-    font-size: 24px;
-    top: 100px;
+    font-size: 35px;
+    top: 300px;
     right: 20px;
   }
 }
