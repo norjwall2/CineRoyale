@@ -1,10 +1,17 @@
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="free movie streaming">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Stream the latest movies, TV shows, and anime for free online. No subscriptions required. Watch anytime with Cine Royale.">
   <meta name="author" content="Cine Royale'">
-  <title>Cine Royale'</title>
+  <meta property="og:title" content="Cine Royale - Free Movie Streaming" />
+  <meta property="og:description" content="Watch trending movies, shows, and anime online for free." />
+  <meta property="og:image" content="https://yourdomain.com/thumbnail.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <title>Watch Free Movies & TV Shows Online | Cine Royale</title>
   <link rel="stylesheet" href="css/home.css">
   <link rel="preload" href="css/home.css" as="style">
   <link rel="preload" href="js/home.js" as="script">
@@ -12,49 +19,69 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="icon" type="image/x-icon" href="site-icon.png">
   <script defer src="js/home.js"></script>
-  <!-- Meta Pixel Code --><script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js'); fbq('init', '1234330925064351'); fbq('track', 'PageView');fbq('track', 'Search');</script><noscript> <img height="1" width="1" src="https://www.facebook.com/tr?id=1234330925064351&ev=PageView&noscript=1"/></noscript><!-- End Meta Pixel Code -->
+  <!-- Meta Pixel Code -->
+  <script>!function (f, b, e, v, n, t, s) { if (f.fbq) return; n = f.fbq = function () { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments) }; if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = []; t = b.createElement(e); t.async = !0; t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s) }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js'); fbq('init', '1234330925064351'); fbq('track', 'PageView'); fbq('track', 'Search');</script>
+  <noscript> <img height="1" width="1"
+      src="https://www.facebook.com/tr?id=1234330925064351&ev=PageView&noscript=1" /></noscript><!-- End Meta Pixel Code -->
 </head>
 
 <body>
   <div class="navbar">
-    <img style="height: 80px;" src="logo.png" alt="LOGO HERE" />
+    <img style="height: 80px;" src="logo.png" alt="Cine Royale Logo" />
     <div class="nav-links">
       <!--<a href="index.html">Home</a>-->
       <input type="text" class="search-bar" placeholder="Search..." onfocus="openSearchModal()" />
     </div>
   </div>
+  <main>
+    <h1 class="titleh1">Watch Trending Movies, TV Shows and Animes for Free</h1>
+ 
 
-  <div class="banner" id="banner">
-    <h1 id="banner-title"></h1>
-  </div>
+  <br>
+  <article>
+    <div class="banner" id="banner">
+      <h2 id="banner-title"></h2>
+    </div>
+  </article>
 
-  <div class="row">
+
+  <section aria-label="Trending Movies">
     <h2>Trending Movies</h2>
-    <div class="list" id="movies-list"></div>
-  </div>
+    <article class="list" id="movies-list"></article>
+  </section>
 
-  <div class="row">
-    <h2>Trending TV Shows</h2>
-    <div class="list" id="tvshows-list"></div>
-  </div>
 
-  <div class="row">
-    <h2>Trending Anime</h2>
-    <div class="list" id="anime-list"></div>
-  </div>
+
+  <section aria-label="Trending TV Shows">
+
+      <h2>Trending TV Shows</h2>
+      <article class="list" id="tvshows-list"></article>
+
+  </section>
+
+  <section aria-label="Trending Anime">
+   
+      <h2>Trending Anime</h2>
+      <article class="list" id="anime-list"></article>
+
+  </section>
+
+ 
+
+
 
   <div class="modal" id="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal()" style="color: red;">&times;</span>
       <div class="modal-body">
-  <img id="modal-image" src="" alt="" />
-  <div class="modal-text">
-    <h2 id="modal-title"></h2>
-    <div class="stars" id="modal-rating"></div>
-    <p id="modal-description"></p>
-  </div>
-</div>
-      
+        <img id="modal-image" src="" alt="" />
+        <div class="modal-text">
+          <h2 id="modal-title"></h2>
+          <div class="stars" id="modal-rating"></div>
+          <p id="modal-description"></p>
+        </div>
+      </div>
+
       <div class="server-selector">
         <label for="server">Change Server:</label>
         <select id="server" onchange="changeServer()">
@@ -63,13 +90,13 @@
           <option value="player.videasy.net">Player.Videasy.net</option>
         </select>
       </div>
-      
+
       <div class="season-episode-selectors" id="season-episode-selectors" style="display: none; margin: 10px 0;">
         <div>
           <label for="season-select">Season:</label>
-        <select id="season-select"></select>
+          <select id="season-select"></select>
         </div>
-        
+
         <label for="episode-select">Episode:</label>
         <select style="width: 70%;" id="episode-select"></select>
       </div>
@@ -84,20 +111,22 @@
 
     <input type="text" id="search-input" placeholder="Search for a movie or show..." oninput="searchTMDB()" />
     <div class="results" id="search-results"></div>
-    
-  </div>
 
-<footer class="footer">
-  <div class="footer-content">
-    <p>&copy; 2025 Cine Royale'. All rights reserved.</p>
-    <div class="footer-links">
-      <a href="#">Disclaimer</a>
-      <!--<a href="#">About Us</a>
-      <a href="#">Contact Us</a>-->
-    
-    </div>
-  <div><p></p>All contents are from by third-party providers. We do not own the movie contents on the website.</p></div>  
   </div>
-</footer>
+</main>
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Cine Royale'. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Disclaimer</a>
+        <!--<a href="#">About Us</a>
+      <a href="#">Contact Us</a>-->
+
+      </div>
+      <div>
+        <p></p>All contents are from by third-party providers. We do not own the movie contents on the website.</p>
+      </div>
+    </div>
+  </footer>
 
 </body>

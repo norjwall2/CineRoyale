@@ -3,13 +3,24 @@
         
         margin-left: 50px;
         margin-right: 50px;
-    
+        padding-top: 135px; /* Adjust this based on navbar height */
          }
 
-    .navbar {
-      display: flex; justify-content: space-between; align-items: center;
-      padding: 10px; background: #3a3838;
-    }
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: #3a3838;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+
 
     .navbar img { height: 40px; }
     .nav-links { display: flex; align-items: center; gap: 10px; }
@@ -179,6 +190,10 @@
     align-items: flex-start;
   }
 
+  .titleh1 {
+  font-size: 25px;
+}
+
     body {
         margin-left: 0px;
         margin-right: 0px;
@@ -253,6 +268,9 @@
         margin-right: 0px;
     }
 
+    .titleh1 {
+font-size: 23px;
+}
     .search-bar {
     margin-left: auto;
       width: 50%;

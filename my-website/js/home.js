@@ -35,9 +35,10 @@ const API_KEY = 'a1e72fd93ed59f56e6332813b9f8dcae';
       const container = document.getElementById(containerId);
       container.innerHTML = '';
       items.forEach(item => {
+       
         const img = document.createElement('img');
         img.src = `${IMG_URL}${item.poster_path}`;
-        img.alt = item.title || item.name;
+        img.alt = item.title || item.name || "Movie Poster from Cine Royale";
         img.onclick = () => showDetails(item);
         container.appendChild(img);
       });
