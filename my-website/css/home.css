@@ -6,6 +6,10 @@
         padding-top: 135px; /* Adjust this based on navbar height */
          }
 
+main {
+    margint-top: 90px;
+}
+
 .navbar {
   position: fixed;
   top: 0;
